@@ -13,10 +13,11 @@ $(function() {
             element += e.title;
             element += '</td>';
             element += '<td>';
-            element += e.publishedDate;
+            date = new Date(e.publishedDate)
+            element += date;
             element += '</td>';
             element += '<td class="text-center">';
-            element += '<a class="text-' + clazz + '" style="text-decoration: none;" href="' + e.link + '" target="_blank"><i class="fa fa-search fa-2x"></i></a>';
+            element += '<a class="text-' + clazz + '" style="text-decoration: none;" href="' + e.link + '" target="_blank"><i class="fa fa-info-circle fa-2x"></i></a>';
             element += '</td>';
             if (clazz != 'danger') {
               element += '<td class="text-center">';
