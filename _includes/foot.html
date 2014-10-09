@@ -1,25 +1,32 @@
-  <div class="container text-center" style="position:absolute;bottom:0;width:100%;">
-    <p>
-      <small>
-        Glowstone is written and maintained by <a href="http://www.platymuus.com">Tad Hardesty</a>, alias SpaceManiac,
-        with contributions from <a href="https://github.com/SpaceManiac/Glowstone/graphs/contributors">many others</a>.
-      </small>
-    </p>
-    <p>
-      <small>
-        &copy; 2014 Tad Hardesty
-      </small>
-    </p>
-  </div>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-  {% for href in page.foot.js %}
-  <script src="{{href}}"></script>
-  {% endfor %}
-  <script>
-    $(function() {
-      $("[rel=tooltip-top]").tooltip({placement: "top"});
+    <footer class="container content-section text-center">
+         <p>
+            <small>
+            Glowstone is written and maintained by <a href="http://www.platymuus.com">Tad Hardesty</a>, alias SpaceManiac,
+            with contributions from <a href="https://github.com/SpaceManiac/Glowstone/graphs/contributors">many others</a>.
+            </small>
+         </p>
+         <p>
+            <small>
+            &copy; 2014 Tad Hardesty
+            </small>
+          </p>
+    </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="/js/glowstone.js"></script>
+    <script>
+    $( document ).ready(function() {
+      $( "#bright" ).fadeIn( "slow");
     });
-  </script>
+    </script>
+    {% for href in page.foot.js %}
+    <script src="{{href}}"></script>
+    {% endfor %}
+    <script>
+      $(function() {
+        $("[rel=tooltip-top]").tooltip({placement: "top"});
+      });
+    </script>
   </body>
 </html>
