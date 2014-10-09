@@ -1,50 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="utf-8" />
-    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link rel="shortcut icon" href="/img/block.png" type="image/png"/>
-    <title>{{page.title}}</title>
-    <style>
-    body, html {
-      position: relative;
-      min-height: 100%;
-    }
-    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Glowstone</title>
+    <link rel="shortcut icon" href="img/block.png" type="image/png"/>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/glowstone.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
   </head>
-  <body style="padding-top: 70px;padding-bottom:100px;">
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a href="/" class="navbar-brand">Glowstone</a>
-          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
+  <body style="background-color: #212121; color: #fafafa;">
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="/#page-top">
+                    <span class="light">GLOW</span>STONE
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#why">Why</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/#about">about</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="/downloads">download</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GlowstoneMC/Glowstone" target="_blank">Code</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/SpaceManiac/Glowstone/issues" target="_blank">Issues</a>
+                    </li>
+                    <li>
+                        <a href="http://build.greatmancode.com/job/Glowkit/javadoc/" target="_blank">Docs</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GlowstoneMC/Glowstone/wiki" target="_blank">Wiki</a>
+                    </li>
+                    <li>
+                        <a href="https://webchat.esper.net/?channels=glowstone" target="_blank">IRC</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="navbar-collapse collapse" id="navbar-main">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="https://github.com/GlowstoneMC/Glowstone" target="_blank">GitHub</a>
-            </li>
-            <li>
-              <a href="/downloads/">Downloads</a>
-            </li>
-            <li>
-              <a href="https://github.com/SpaceManiac/Glowstone/issues" target="_blank">Issue Tracker</a>
-            </li>
-            <li>
-              <a href="http://build.greatmancode.com/job/Glowkit/javadoc/" target="_blank">API Docs</a>
-            </li>
-            <li>
-              <a href="https://github.com/GlowstoneMC/Glowstone/wiki" target="_blank">Wiki</a>
-            </li>
-            <li>
-              <a href="https://webchat.esper.net/?channels=glowstone" target="_blank">Get Help</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </nav>
