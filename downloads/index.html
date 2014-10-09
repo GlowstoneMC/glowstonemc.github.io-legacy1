@@ -5,29 +5,33 @@ foot:
     "/js/downloads.js"
 ---
 {% include head.html %}
-<div class="container">
-  <table id="builds" class="table table-bordered table-hover">
-    <tr>
-      <th class="col-md-4">Title</th>
-      <th class="col-md-4">Date</th>
-      <th class="text-center col-md-2">Build Info</th>
-      <th class="text-center col-md-2">Download link</th>
-    </tr>
-    <tr class="text-center" id="more-downloads">
-      <td colspan="4"><a href="http://ci.chrisgward.com/job/Glowstone/">Older Downloads</a></td>
-    </tr>
-  </table>
-  <div class="text-center" id="loading">
-    <i class="fa fa-circle-o-notch fa-spin fa-5x"></i>
-  </div>
-  <div class="text-center" id="error" style="display:none;">
-    <i class="fa fa-exclamation fa-5x"></i>
-    <div>
-      There was an error loading the download list.
+    <header class="about">
+    <div class="about-section">  
+    <div class="container">
+      <table id="builds" class="table table-hover">
+        <tr>
+          <th class="col-md-4">Build</th>
+          <th class="col-md-4">Date</th>
+          <th class="col-md-2 text-center">Info</th>
+          <th class="col-md-2 text-center">Download</th>
+        </tr>
+        <tr class="text-center" id="more-downloads">
+          <td colspan="4"><a href="http://ci.chrisgward.com/job/Glowstone/">Older Downloads</a></td>
+        </tr>
+      </table>
+      <div class="text-center" id="loading">
+        <i class="fa fa-circle-o-notch fa-spin fa-5x"></i>
+      </div>
+      <div class="text-center" id="error" style="display:none;">
+        <i class="fa fa-exclamation fa-5x"></i>
+        <div>
+          There was an error loading the download list.
+        </div>
+        <div>
+          Go to <a href="http://ci.chrisgward.com/job/Glowstone/" target="_blank">Jenkins</a>?
+        </div>
+      </div>
     </div>
-    <div>
-      Go to <a href="http://ci.chrisgward.com/job/Glowstone/" target="_blank">Jenkins</a>?
     </div>
-  </div>
-</div>
+    </header>
 {% include foot.html %}
